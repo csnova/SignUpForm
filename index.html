@@ -7,8 +7,92 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-
-    </form>
+    <div class="container">
+      <div class="leftSide">
+        <div class="logoBar">
+          <img
+            height="100px"
+            width="100px"
+            src="Images/SuperNovaLogo.svg"
+            class="logoImage"
+            alt="logo"
+          />
+          <p>Super Nova</p>
+        </div>
+        <div class="bottom">
+          <p class="caption">Aldebaran S. on Unsplash</p>
+        </div>
+      </div>
+      <div class="rightSide">
+        <form>
+          <div class="content">
+            <div class="wordBox">
+              <p>
+                This is not a real online service! You know you need something
+                like this in your life. Sign Up <em>now</em> to get started!
+              </p>
+              <p>You <em>know</em> you want to!</p>
+            </div>
+          </div>
+          <div class="contactInfo">
+            <div class="loginPage">
+              <h2>Let's do this!</h2>
+              <div class="name">
+                <div class="fName">
+                  <label for="firstName">FIRST NAME *</label>
+                  <input type="text" id="firstName" required />
+                </div>
+                <div class="lName">
+                  <label for="lastName">LAST NAME *</label>
+                  <input type="text" id="lastName" required />
+                </div>
+              </div>
+              <div class="contact">
+                <div class="email">
+                  <label for="user_email">EMAIL *</label>
+                  <input
+                    type="email"
+                    id="user_email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+                <div class="number">
+                  <label for="phoneNumber">PHONE NUMBER</label>
+                  <input type="text" id="phoneNumber" />
+                </div>
+              </div>
+              <div class="password">
+                <div class="firstPassword">
+                  <label for="user_password">PASSWORD *</label>
+                  <input
+                    type="password"
+                    id="user_password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="lastPassword">
+                  <label for="check_password">CONFIRM PASSWORD *</label>
+                  <input
+                    type="password"
+                    id="check_password"
+                    name="check_password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="signIn">
+            <div>
+              <button type="submit">Create Account</button>
+              <p>Already have an account? <a href="index.html">Login</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
