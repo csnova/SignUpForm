@@ -65,22 +65,29 @@
               </div>
               <div class="password">
                 <div class="firstPassword">
-                  <label for="user_password">PASSWORD *</label>
-                  <input
-                    type="password"
-                    id="user_password"
-                    name="password"
-                    required
-                  />
+                  <label
+                    >PASSWORD *
+                    <input
+                      name="password"
+                      id="password"
+                      type="password"
+                      onkeyup="check();"
+                      required
+                    />
+                  </label>
                 </div>
                 <div class="lastPassword">
-                  <label for="check_password">CONFIRM PASSWORD *</label>
-                  <input
-                    type="password"
-                    id="check_password"
-                    name="check_password"
-                    required
-                  />
+                  <label
+                    >CONFIRM PASSWORD *
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      id="confirm_password"
+                      onkeyup="check();"
+                      required
+                    />
+                  </label>
+                  <span id="message"></span>
                 </div>
               </div>
             </div>
@@ -94,5 +101,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

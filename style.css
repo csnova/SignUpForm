@@ -63,7 +63,7 @@ html {
 }
 
 .wordBox {
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .contactInfo {
@@ -104,6 +104,10 @@ h2 {
   padding-right: 50px;
 }
 
+.firstPassword {
+  margin-right: 75px;
+}
+
 label {
   color: rgb(78, 78, 78);
   font-size: 16px;
@@ -112,7 +116,9 @@ label {
 }
 
 input {
-    width: clamp(400px, 50%, 1000px);
+  width: clamp(400px, 50%, 1000px);
+  border-color: grey;
+  border-radius: 5px;
 }
 
 .signIn {
@@ -128,6 +134,38 @@ button {
   padding-right: 30px;
   padding-left: 30px;
   margin: 20px;
-  background-color: orange;
+  background-color: rgb(255, 212, 69);
   border-radius: 10px;
 }
+
+input:focus {
+  background-color: rgb(187, 211, 219);
+}
+
+span {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 13px;
+  margin: 5px 0 0;
+  text-shadow: 0px 1px 1px black;
+}
+/* .error-message {
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+
+.error label {
+  color: #cc0033;
+}
+
+.error input[type="text"] {
+  background-color: #cc0033;
+  border: 1px solid #cc0033;
+}
+
+.error .error-message {
+  display: inline-block;
+} */
